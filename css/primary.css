@@ -1,0 +1,28 @@
+.guy {
+  display: inline-block;
+  width: 180px;
+  height: 390px;
+  background-image: url('../images/guy.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 4em;
+}
+.guy>span {
+  position: relative;
+  text-align: center;
+  top: 3.5em;
+}
+#guys {
+  width: 50em;
+}
+.product {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-image: url('../images/product.svg');
+  background-repeat: no-repeat;
+  background-size: 10em;
+}
+.step {
+}

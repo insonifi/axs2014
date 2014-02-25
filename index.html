@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/primary.css" type="text/css">
+        <link rel="stylesheet" href="css/basic-animations.css" type="text/css">
+        <script src="src/jquery-2.1.0.min.js"></script>
+        <script src="src/jmpress.all.min.js"></script>
+    </head>
+    <body>
+        <div id="jmpress">
+            <section class="step" data-x="0" data-y="-1000">
+                <div class="guy" data-jmpress="fade after 1s step"><span>Dev</span></div>
+                <div class="product" data-jmpress="fade"></div>
+                <div class="guy" data-jmpress="fade after 1s prev"><span>Client</span></div>
+            </section>
+            <section class="step" data-x="0" data-y="0" data>
+                <div id="guys">
+                    <div class="guy" data-jmpress="drive-right after #qa" id="ts"><span>Sup</span></div>
+                    <div class="guy" data-jmpress="fade after 100ms step" id="dev"><span>Dev</span></div>
+                    <div class="guy" data-jmpress="drive-left" id="qa"><span>QA</span></div>
+                </div>
+            </section>
+            <section class="step" data-x="1000" data-y="200" data-z="100">
+                <div class="step" data-exclude data-x="-200" data-y="200">
+                    SUPPORT
+                </div>
+                <div class="step" data-exclude data-x="0" data-y="-100">
+                    DEVELOPMENT
+                </div>
+                <div class="step" data-exclude data-x="200" data-y="200">
+                    QA
+                </div>
+            </section>
+            <section class="step" data-x="800" data-y="400" data-z="-100" data-scale="0.1">
+                function
+                procedures
+                help
+            </section>
+            <section class="step" data-x="2000" data-y="200">
+                join, all builds, QA weekly, QA interaction
+            </section>
+            <section class="step" data-x="3000" data-y="200">
+                statistics, load, reinforce
+            </section>
+        </div>
+    </body>
+    <script>
+        $(function () {
+            $('#jmpress').jmpress({
+                //stepSelector: 'section'
+            });
+            $('#jmpress').jmpress('template', 'guy', {
+                x: 0
+            });
+        })
+        $(function () {
+        })
+    </script>
+</html>
