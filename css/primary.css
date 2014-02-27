@@ -2,6 +2,8 @@ body {
   color: rgb(75, 75, 75);
   background-image: url('../images/backplane.svg');
   background-size: cover;
+  font-family: 'Open Sans';
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 .guy {
   display: inline-block;
@@ -59,6 +61,11 @@ body {
 p {
   font-size: 20px;
 }
+#c-r {
+  position: fixed;
+  top: -60px;
+  left: -520px;
+}
 #ts-r {
   position: fixed;
   top: 100px;
@@ -75,7 +82,7 @@ p {
   top: 100px;
 }
 #america {
-  height: 120vh;
+  height: 100vh;
 }
 #backplane {
   position: static;
@@ -105,13 +112,13 @@ p {
   z-index: 100;
 }
 #america-list {
-top: 20%;
-left: -15%;
-position: fixed;
+  top: 0%;
+  left: -15%;
+  position: fixed;
 }
 #deliver {
   position: fixed;
-  -webkit-transform: rotate(-0deg) scale(1.7, -1.7) translate(32px, -300px);
+  -webkit-transform: rotate(0deg) scale(1.7, -1.7) translate(32px, -300px);
   transform: rotate(-0deg) scale(1.7, -1.7) translate(32px, -300px);
 }
 #logs {
@@ -119,8 +126,8 @@ position: fixed;
 }
 #c-s {
   position: fixed;
-  -webkit-transform: rotate(-20deg) scale(1) translate(-470px, 20px);
-  transform: rotate(-20deg) scale(1) translate(-470px, 20px);
+  -webkit-transform: rotate(25deg) scale(1, -1) translate(-340px, -270px);
+  transform: rotate(25deg) scale(1, -1) translate(-340px, -270px);
 }
 #s-d {
   position: fixed;
@@ -145,6 +152,10 @@ position: fixed;
   position: fixed;
   top: 0;
   right: -10%;
+}
+#jmpress {
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 #team {
   position: fixed;
@@ -197,7 +208,8 @@ position: fixed;
   width: 45%;
 /*  background: rgba(49, 146, 223, 0.05);*/
 /*  background: linear-gradient(to bottom, rgba(255,187,50,0.4) 0%,rgba(254,187,52,0.4) 1%,rgba(125,185,232,0) 100%); /* W3C */
-  background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(254,187,52,0.4) 99%,rgba(255,187,50,0.4) 100%); /* W3C */
+/*  background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(254,187,52,0.4) 99%,rgba(255,187,50,0.4) 100%); /* W3C */
+  background: linear-gradient(to bottom, rgba(145,232,66,0.04) 0%, rgba(145,232,66,0.29) 100%);
 }
 .step {
   opacity: 1;
@@ -208,8 +220,12 @@ td {
 ul {
   list-style-type: none;
 }
+li:first-child {
+padding-left: 0;
+}
 li {
-  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
 }
 /*.step:not(.active) {*/
 /*  -webkit-transition: opacity 1s 5s; */

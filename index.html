@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="css/primary.css" type="text/css">
         <link rel="stylesheet" href="css/basic-animations.css" type="text/css">
+        <link rel="stylesheet" href="css/fonts.css" type="text/css">
         <script src="src/jquery-2.1.0.min.js"></script>
         <script src="src/jmpress.all.min.js"></script>
 <!--        <script src="src/snap.svg-min.js"></script>-->
@@ -10,7 +11,7 @@
 <!--        <img id="backplane" src="images/backplane.svg">-->
         <img id="logo" src="images/axxon.svg">
         <div id="logo_desc">
-            <div>AAC 2014 — AxxonSoft Annual Conference</div>
+            <div>AAC 2014 &mdash; AxxonSoft Annual Conference</div>
             <div>technical guys present</div>
         </div>
         <div id="jmpress">
@@ -31,18 +32,17 @@
                     <div class="guy" data-jmpress="drive-left" id="qa"><span class="guy-name l-text">QA</span ></div>
                 </div>
             </section>
-            <section data-x="0" data-y="0" data-rotate-y="90">
-                 <div>
-                    <div class="round" id="ts-r">TS</div>
-                    <div class="round" id="dev-r">DEV</div>
-                    <div class="round" id="qa-r">QA</div>
-                </div>
+            <section data-x="0" data-y="0" data-rotate-y="90"data-scale="3">
+                <div class="round" id="c-r">Client</div>
+                <div class="round" id="ts-r">TS</div>
+                <div class="round" id="dev-r">DEV</div>
+                <div class="round" id="qa-r">QA</div>
                 <img id="c-s" class="arrow" data-jmpress="fade after 1000ms step" src="images/arrow.svg" />
                 <img id="s-d" class="arrow" data-jmpress="fade after 500ms #c-s" src="images/arrow.svg" />
                 <img id="d-q" class="arrow" data-jmpress="fade after 500ms #s-d" src="images/arrow.svg" />
                 <img id="q-s" class="arrow" data-jmpress="fade after 500ms #d-q" src="images/arrow.svg" />
             </section>
-            <section data-x="0" data-y="50" data-z="100" data-scale="0.3" data-rotate-y="90">
+            <section data-x="0" data-y="200" data-z="200" data-rotate-y="90">
                 <div class="container">
                   <div class="block left-align">
                       <p data-jmpress="drive-right after 500ms step">collect & validate information</p>
@@ -55,7 +55,7 @@
                   </div>
                 <div>
             </section>
-            <section data-x="0" data-y="-250" data-z="0" data-scale="0.3" data-rotate-y="90">
+            <section data-x="0" data-y="-700" data-z="-500" data-rotate-y="90">
                 <div class="container">
                     <div class="left-align">
                         <p data-jmpress="drive-right after 500ms step">deeper analysis</p>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </section>
-            <section data-x="0" data-y="50" data-z="-400" data-scale="0.3" data-rotate-y="90">
+            <section data-x="0" data-y="250" data-z="-400" data-rotate-y="90">
                 <div class="container">
                     <div class="left-align">
                       <p data-jmpress="drive-right after 500ms step">confirm <strong>fix</strong></p>
@@ -125,13 +125,19 @@
                 </div>
             </section>
             <section data-x="0" data-y="3000" data-z="-200" data-rotate-x="90">
+                <div class="container" data-jmpress="fade after 500ms step">
+                    <h1 class="l-text">Phone support in Moscow</h1>
+                </div>
+            </section>
+            <section data-x="0" data-y="4000" data-z="-400" data-rotate-x="90">
                 <img id="america" data-jmpress="fade after 500ms step" src="images/america.svg" />
                 <img id="buenos-aires" data-jmpress="zoom after 1s prev" src="images/logo.svg" />
                 <div id="timezone" data-jmpress="drive-up after 2s prev"></div>
                 <ul id="america-list">
-                    <li class="l-text" data-jmpress="drive-right after 500ms prev">timezone</li>
-                    <li class="l-text" data-jmpress="drive-right after 100ms prev">phone</li>
-                    <li class="l-text" data-jmpress="drive-right after 100ms prev">appropriate languages</li>
+                    <li class="l-text" data-jmpress="drive-right after 500ms prev"><h1>Support Center in Argentina</h1></li>
+                    <li class="l-text" data-jmpress="drive-right after 800ms prev">local timezones</li>
+                    <li class="l-text" data-jmpress="drive-right after 100ms prev">phone support</li>
+                    <li class="l-text" data-jmpress="drive-right after 100ms prev">relevant languages</li>
                 </ul>
             </section>
         </div>
@@ -168,3 +174,4 @@
         })
     </script>
 </html>
+
