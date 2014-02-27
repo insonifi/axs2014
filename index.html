@@ -4,83 +4,167 @@
         <link rel="stylesheet" href="css/basic-animations.css" type="text/css">
         <script src="src/jquery-2.1.0.min.js"></script>
         <script src="src/jmpress.all.min.js"></script>
+<!--        <script src="src/snap.svg-min.js"></script>-->
     </head>
     <body>
+<!--        <img id="backplane" src="images/backplane.svg">-->
+        <img id="logo" src="images/axxon.svg">
+        <div id="logo_desc">
+            <div>AAC 2014 — AxxonSoft Annual Conference</div>
+            <div>technical guys present</div>
+        </div>
         <div id="jmpress">
-            <section class="step" data-x="0" data-y="-1000">
+            <section id="frontpage" data-x="0" data-y="-1000">
+            </section>
+            <section data-x="0" data-y="-1000">
                 <div class="container">
-                    <span class="guy" data-jmpress="fade after 1s step"><span>Dev</span></span>
-                    <span class="product" data-jmpress="fade" ><img src="images/product.svg" /></span>
-                    <span class="guy" data-jmpress="fade after 1s prev"><span>Client</span></span>
+                    <div class="guy block" data-jmpress="fade after 1s step"><span class="guy-name l-text">Dev</span></div>
+                    <img id="deliver" data-jmpress="fade" src="images/arrow.svg" />
+                    <div class="product block" data-jmpress="fade after 100ms prev" ><img src="images/product.svg" /></div>
+                    <div class="guy block" data-jmpress="fade after 1s prev"><span class="guy-name l-text">Client</span></div>
                 </div>
             </section>
-            <section class="step" data-x="0" data-y="0" data>
+            <section data-x="0" data-y="0" data>
                 <div class="container">
-                    <div class="guy" data-jmpress="drive-right after #qa" id="ts"><span>Sup</span></div>
-                    <div class="guy" data-jmpress="fade after 100ms step" id="dev"><span>Dev</span></div>
-                    <div class="guy" data-jmpress="drive-left" id="qa"><span>QA</span></div>
+                    <div class="guy" data-jmpress="drive-right after #qa" id="ts"><span class="guy-name l-text">TS</span></div>
+                    <div class="guy" data-jmpress="fade after 100ms step" id="dev"><span class="guy-name l-text">DEV</span></div>
+                    <div class="guy" data-jmpress="drive-left" id="qa"><span class="guy-name l-text">QA</span ></div>
                 </div>
             </section>
-            <section class="step" data-x="0" data-y="0" data-rotate-y="90">
-                <img id="c-s" data-jmpress="fade after 500ms step" src="images/arrow.svg" />
-                <img id="s-d" data-jmpress="fade after 500ms #c-s" src="images/arrow.svg" />
-                <img id="d-q" data-jmpress="fade after 500ms #s-d" src="images/arrow.svg" />
-                <img id="q-s" data-jmpress="fade after 500ms #d-q" src="images/arrow.svg" />
-                <div class="step" data-exclude="true" data-x="-200" data-y="200">
-                    <div class="round">SUPPORT</div>
+            <section data-x="0" data-y="0" data-rotate-y="90">
+                 <div>
+                    <div class="round" id="ts-r">TS</div>
+                    <div class="round" id="dev-r">DEV</div>
+                    <div class="round" id="qa-r">QA</div>
                 </div>
-                <div class="step" data-exclude="true" data-x="0" data-y="-100">
-                    <div class="round">DEVELOPMENT</div>
-                </div>
-                <div class="step" data-exclude="true" data-x="200" data-y="200">
-                    <div class="round">QA</div>
-                </div>
+                <img id="c-s" class="arrow" data-jmpress="fade after 1000ms step" src="images/arrow.svg" />
+                <img id="s-d" class="arrow" data-jmpress="fade after 500ms #c-s" src="images/arrow.svg" />
+                <img id="d-q" class="arrow" data-jmpress="fade after 500ms #s-d" src="images/arrow.svg" />
+                <img id="q-s" class="arrow" data-jmpress="fade after 500ms #d-q" src="images/arrow.svg" />
             </section>
-            <section class="step" data-x="-200" data-y="-200" data-z="250" data-scale="0.6" data-rotate-y="90">
-                <div class="container" data-jmpress="expand after 250ms step">
-                  <div class="block">
+            <section data-x="0" data-y="50" data-z="100" data-scale="0.3" data-rotate-y="90">
+                <div class="container">
+                  <div class="block left-align">
                       <p data-jmpress="drive-right after 500ms step">collect & validate information</p>
-                      <p data-jmpress="drive-right">localise cause</p>
-                      <p data-jmpress="drive-right">report problems</p>
+                      <p data-jmpress="drive-right after 100ms prev">report problems</p>
+                      <p data-jmpress="drive-right after 100ms prev">consult</p>
                   </div>
-                  <div class="block" id="logs" data-jmpress="drive-left">logs of the problem</div>
-                <div>
-            </section>
-            <section class="step" data-x="-200" data-y="0" data-z="-300" data-scale="0.6" data-rotate-y="90">
-                <div class="container" data-jmpress="expand after 250ms step">
-                  <div class="block">
-                      <p data-jmpress="drive-right after 500ms step">weekly builds</p>
-                      <p data-jmpress="drive-right">tighter interaction</p>
+                  <div class="block left-align" id="logs" ">
+                      <p data-jmpress="drive-left">prepare <u>all</u> required information</p>
+                      <p data-jmpress="drive-left after 100ms prev">distinct problem formulation</p>                      
                   </div>
                 <div>
             </section>
-            <section class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="90">
-                <div class="container" data-jmpress="expand after 250ms step">
-                  <div class="block">
-                      <p data-jmpress="drive-right after 500ms step">SUPPORT + DEVSUPPORT => XL</p>
-                      <p data-jmpress="drive-right">Every build is supported (current branch?)</p>
-                  </div>
-                <div>
+            <section data-x="0" data-y="-250" data-z="0" data-scale="0.3" data-rotate-y="90">
+                <div class="container">
+                    <div class="left-align">
+                        <p data-jmpress="drive-right after 500ms step">deeper analysis</p>
+                        <p data-jmpress="drive-right after 100ms prev">actual fixing</p>
+                    </div>
+                </div>
             </section>
-            <section class="step" data-x="3000" data-y="200" data-rotate-x="90">
-                <img src="images/charts.png" data-jmpress="fade after 500ms step">
-                statistics, load, reinforce, team
+            <section data-x="0" data-y="50" data-z="-400" data-scale="0.3" data-rotate-y="90">
+                <div class="container">
+                    <div class="left-align">
+                      <p data-jmpress="drive-right after 500ms step">confirm <strong>fix</strong></p>
+                      <p data-jmpress="fade after 2s prev">...and that nothing else has been broken along way</strong></p>
+                    <div>
+                </div>
             </section>
-            <section class="step" data-x="3000" data-y="200" data-rotate-x="90">
-                plans
+            <section data-x="0" data-y="0" data-z="0" data-rotate-x="90">
+                <div class="container correct-left" data-jmpress="fade after 1000ms step">
+                    <div id="news" class="left-align">
+                        <div>The</div>
+                        <div>news</div>
+                    </div>
+                    <div class="right left-align">
+                          <table>
+                          <tbody>
+                            <tr data-jmpress="fade after 500ms prev">
+                                <td>
+                                    <img src="images/JIRA_logo.svg" />
+                                </td>
+                                <td class="gap-left">
+                                  <div>SUPPORT + DSUPPORT</div>
+                                  <div class="l-text"><strong>SUPPORT</strong></div>
+                                </td>
+                            </tr>
+                            <tr data-jmpress="fade after 1s prev">
+                                <td><span class="l-text">Policy</span></td>
+                                <td class="gap-left"><p>build *.*</p></td>
+                            </tr>
+                            <tr data-jmpress="fade after 1s prev">
+                                <td><span class="l-text">QA</span></td>
+                                <td class="gap-left">
+                                    <p>weekly builds</p>
+                                    <p>tighter interaction</p>
+                                </td>
+                            </re>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section data-x="0" data-y="1000" data-z="0" data-rotate-x="90">
+                <div class="container">
+                    <img class="chart" data-jmpress="fade after 500ms step" src="images/chart.svg">
+                </div>
+                <ul id="team">
+                    <li class="l-text" data-jmpress="fade after 500ms prev"><h1>Team</h1></li>
+                    <li class="l-text" data-jmpress="drive-right after 500ms prev">Anna</li>
+                    <li class="l-text" data-jmpress="drive-right after 100ms prev">Alex</li>
+                    <li class="l-text" data-jmpress="drive-right after 100ms prev">Andrey</li> 
+                    <li class="l-text" data-jmpress="drive-right after 100ms prev">Denis</li>
+                </ul>
+                <div id="increase" data-jmpress="fade" class="l-text">&#8593;load</div>
+            </section>
+            <section data-x="0" data-y="2000" data-z="0" data-rotate-x="90">
+                <div class="container" data-jmpress="fade after 500ms step">
+                    <h1 class="l-text">Describe tools and methods</h1>
+                    <img id="toolbox" src="images/toolbox.svg">
+                </div>
+            </section>
+            <section data-x="0" data-y="3000" data-z="-200" data-rotate-x="90">
+                <img id="america" data-jmpress="fade after 500ms step" src="images/america.svg" />
+                <img id="buenos-aires" data-jmpress="zoom after 1s prev" src="images/logo.svg" />
+                <div id="timezone" data-jmpress="drive-up after 2s prev"></div>
+                <ul id="america-list">
+                    <li class="l-text" data-jmpress="drive-right after 500ms prev">timezone</li>
+                    <li class="l-text" data-jmpress="drive-right after 100ms prev">phone</li>
+                    <li class="l-text" data-jmpress="drive-right after 100ms prev">appropriate languages</li>
+                </ul>
             </section>
         </div>
     </body>
     <script>
         $(function () {
-            $('#jmpress').jmpress({
-                //stepSelector: 'section'
+            var $jmpress =  $('#jmpress');
+              $jmpress.jmpress({
+                    stepSelector: 'section',
+                    mouse: { clickSelects: false }
+                });
+            $('body').click(function (e) {
+                $jmpress.jmpress('next');
+            })
+            $('section:first-child').on('enterStep', function (event) {
+                $('#logo').animate ({
+                    top: '15%',
+                    left: '10%',
+                    width: '83%'
+                }, 300);
+                $('#logo_desc').fadeIn();
+            })
+            $('section:not(:first-child').on('enterStep', function (event) {
+                $('#logo').animate ({
+                    top: '87%',
+                    left: '77%',
+                    width: '20%'
+                }, 300);
+                $('#logo_desc').fadeOut();
             });
-            $('#jmpress').jmpress('template', 'guy', {
-                x: 0
+            $('section:nth-child(4)').on('leaveStep', function (event) {
+                $('.arrow').attr('class', 'arrow will-fade');
             });
-        })
-        $(function () {
         })
     </script>
 </html>
