@@ -11,13 +11,16 @@
 <!--        <img id="backplane" src="images/backplane.svg">-->
         <img id="logo" src="images/axxon.svg">
         <div id="logo_desc">
-            <div>AAC 2014 &mdash; AxxonSoft Annual Conference</div>
-            <div>technical guys present</div>
+            <p>AAC 2014 &mdash; AxxonSoft Annual Conference</p>
+            <p>technical guys present</p>
         </div>
         <div id="jmpress">
             <section id="frontpage" data-x="0" data-y="-1000">
             </section>
-            <section data-x="0" data-y="-1000">
+	    <section>
+		<h1 class="l-text" data-jmpress="drive-up after 2s step">What is support?</h1>
+	    </section>
+            <section data-x="0" data-y="1000">
                 <div class="container">
                     <div class="guy block" data-jmpress="fade after 1s step"><span class="guy-name l-text">Dev</span></div>
                     <img id="deliver" data-jmpress="fade" src="images/arrow.svg" />
@@ -29,10 +32,12 @@
                 <div class="container">
                     <div class="guy" data-jmpress="drive-right after #qa" id="ts"><span class="guy-name l-text">TS</span></div>
                     <div class="guy" data-jmpress="fade after 100ms step" id="dev"><span class="guy-name l-text">DEV</span></div>
-                    <div class="guy" data-jmpress="drive-left" id="qa"><span class="guy-name l-text">QA</span ></div>
+                    <div class="guy" data-jmpress="drive-left" id="qa"><span class="guy-name l-text">QA</span></div>
+		    <!-- <div class="guy" data-jmpress="dev after 2s prev" id="doc"><span class="guy-name l-text">DOC</span></div> //-->
                 </div>
             </section>
-            <section data-x="0" data-y="0" data-rotate-y="90"data-scale="3">
+            <section class="hide-arrows" data-x="0" data-y="0" data-rotate-y="90"data-scale="3">
+		<div id="how" class="l-text"><h1>How it works</h1></div>
                 <div class="round" id="c-r">Client</div>
                 <div class="round" id="ts-r">TS</div>
                 <div class="round" id="dev-r">DEV</div>
@@ -49,8 +54,9 @@
                       <p data-jmpress="drive-right after 100ms prev">report problems</p>
                       <p data-jmpress="drive-right after 100ms prev">consult</p>
                   </div>
-                  <div class="block left-align" id="logs" ">
-                      <p data-jmpress="drive-left">prepare <u>all</u> required information</p>
+                  <div class="block left-align" id="logs" data-jmpress="fade">
+                      <p data-jmpress="drive-left after 100ms prev">prepare <u>all</u> required information</p>
+		      <p data-jmpress="drive-left after 100ms prev">do sanity check</p>
                       <p data-jmpress="drive-left after 100ms prev">distinct problem formulation</p>                      
                   </div>
                 <div>
@@ -124,17 +130,14 @@
                     <img id="toolbox" src="images/toolbox.svg">
                 </div>
             </section>
-            <section data-x="0" data-y="3000" data-z="-200" data-rotate-x="90">
-                <div class="container" data-jmpress="fade after 500ms step">
-                    <h1 class="l-text">Phone support in Moscow</h1>
-                </div>
-            </section>
             <section data-x="0" data-y="4000" data-z="-400" data-rotate-x="90">
-                <img id="america" data-jmpress="fade after 500ms step" src="images/america.svg" />
-                <img id="buenos-aires" data-jmpress="zoom after 1s prev" src="images/logo.svg" />
-                <div id="timezone" data-jmpress="drive-up after 2s prev"></div>
-                <ul id="america-list">
-                    <li class="l-text" data-jmpress="drive-right after 500ms prev"><h1>Support Center in Argentina</h1></li>
+                <img id="world" data-jmpress="fade after 500ms step" src="images/world.svg" />
+                <img id="moscow" data-jmpress="drive-down after 1s prev" src="images/marker.svg" />
+                <div id="timezone-m" data-jmpress="drive-up after 2s prev"></div>
+                <img id="buenos-aires" data-jmpress="drive-down after 1s prev" src="images/marker.svg" />
+                <div id="timezone-b" data-jmpress="drive-up after 2s prev"></div>
+                <ul id="centers-list">
+                    <li class="l-text" data-jmpress="drive-right after 500ms prev"><h1>more Support centers</h1></li>
                     <li class="l-text" data-jmpress="drive-right after 800ms prev">local timezones</li>
                     <li class="l-text" data-jmpress="drive-right after 100ms prev">phone support</li>
                     <li class="l-text" data-jmpress="drive-right after 100ms prev">relevant languages</li>
@@ -168,7 +171,7 @@
                 }, 300);
                 $('#logo_desc').fadeOut();
             });
-            $('section:nth-child(4)').on('leaveStep', function (event) {
+            $('section.hide-arrows').on('leaveStep', function (event) {
                 $('.arrow').attr('class', 'arrow will-fade');
             });
         })

@@ -61,6 +61,13 @@ body {
 p {
   font-size: 30px;
 }
+#doc {
+  position: fixed:
+  opacity: 0.2;
+  position: fixed;
+  left: 17%;
+  width: 14%;
+}
 #c-r {
   position: fixed;
   top: -60px;
@@ -81,8 +88,14 @@ p {
   left: 200px;
   top: 100px;
 }
-#america {
+#world {
   height: 100vh;
+}
+#how {
+  position: fixed;
+  top: -16vh;
+  left: -2vw;
+  opacity: 0.2;
 }
 #backplane {
   position: static;
@@ -91,11 +104,18 @@ p {
   width: 100%;
 }
 #buenos-aires {
-  left: 81.5%;
-  top: 82%;
+  left: 31%;
+  top: 74.3%;
   position: fixed;
-  width: 4%
+  width: 3%;
 }
+#moscow {
+  left: 57.5%;
+  top: 26.6%;
+  position: fixed;
+  width: 3%;
+}
+
 #logo {
   position: fixed;
   top: 15%;
@@ -105,15 +125,15 @@ p {
 }
 #logo_desc {
   position: fixed;
-  top: 77%;
+  top: 67%;
   font-size: 2em;
   width: 100%;
   text-align: center;
   z-index: 100;
 }
-#america-list {
-  top: 0%;
-  left: -15%;
+#centers-list {
+  top: -3%;
+  left: -4%;
   position: fixed;
 }
 #deliver {
@@ -122,6 +142,10 @@ p {
   transform: rotate(-0deg) scale(1.7, -1.7) translate(32px, -300px);
 }
 #logs {
+  padding-left: 4%;
+  padding-right: 4%;
+  background: rgb(75, 75, 75);
+  color: rgb(200, 200, 200);
   margin-left: 15em;
 }
 #c-s {
@@ -173,12 +197,12 @@ p {
   transform:rotate(-60deg) scale(1) translate(-65px, -170px);
 }
 #toolbox {
-  padding: 25%
+  padding: 15%
 }
 .chart {
   opacity: 0.5;
-  height: auto;
-  width: 65em;
+  height: 75vh;
+  width: auto;;
 }
 .gap-left {
   padding-left: 5em;
@@ -200,12 +224,23 @@ p {
   font-weight: 800;
   opacity: 0.1;
 }
-#timezone {
+#timezone-b {
   top: 0;
   position: fixed;
-  left: 59%;
+  left: 19%;
   height: 100%;
-  width: 45%;
+  width: 27%;
+/*  background: rgba(49, 146, 223, 0.05);*/
+/*  background: linear-gradient(to bottom, rgba(255,187,50,0.4) 0%,rgba(254,187,52,0.4) 1%,rgba(125,185,232,0) 100%); /* W3C */
+/*  background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(254,187,52,0.4) 99%,rgba(255,187,50,0.4) 100%); /* W3C */
+  background: linear-gradient(to bottom, rgba(145,232,66,0.04) 0%, rgba(145,232,66,0.29) 100%);
+}
+#timezone-m {
+  top: 0;
+  position: fixed;
+  left: 46%;
+  height: 100%;
+  width: 27%;
 /*  background: rgba(49, 146, 223, 0.05);*/
 /*  background: linear-gradient(to bottom, rgba(255,187,50,0.4) 0%,rgba(254,187,52,0.4) 1%,rgba(125,185,232,0) 100%); /* W3C */
 /*  background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(254,187,52,0.4) 99%,rgba(255,187,50,0.4) 100%); /* W3C */
