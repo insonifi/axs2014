@@ -18,18 +18,18 @@
             <section id="frontpage" data-x="0" data-y="-1000">
             </section>
 	    <section>
-		<h1 class="l-text" data-jmpress="drive-up after 2s step">What is support?</h1>
+            <h1 class="l-text" data-jmpress="drive-up after 2s step">What is support?</h1>
 	    </section>
             <section data-x="0" data-y="1000">
-                <div class="container">
-                    <div class="guy block" data-jmpress="fade after 1s step"><span class="guy-name l-text">Dev</span></div>
+                <div class="nowrap correct-left">
+                    <div class="guy block" data-jmpress="fade after 1s step"><span class="guy-name l-text">DEV</span></div>
                     <img id="deliver" data-jmpress="fade" src="images/arrow.svg" />
-                    <div class="product block" data-jmpress="fade after 100ms prev" ><img src="images/product.svg" /></div>
+                    <img id="product" class="block" data-jmpress="fade after 100ms prev" src="images/product.svg" />
                     <div class="guy block" data-jmpress="fade after 1s prev"><span class="guy-name l-text">Client</span></div>
                 </div>
             </section>
             <section data-x="0" data-y="0" data>
-                <div class="container">
+                <div class="container nowrap correct-left">
                     <div class="guy" data-jmpress="drive-right after #qa" id="ts"><span class="guy-name l-text">TS</span></div>
                     <div class="guy" data-jmpress="fade after 100ms step" id="dev"><span class="guy-name l-text">DEV</span></div>
                     <div class="guy" data-jmpress="drive-left" id="qa"><span class="guy-name l-text">QA</span></div>
@@ -37,18 +37,20 @@
                 </div>
             </section>
             <section class="hide-arrows" data-x="0" data-y="0" data-rotate-y="90"data-scale="3">
-		<div id="how" class="l-text"><h1>How it works</h1></div>
-                <div class="round" id="c-r">Client</div>
-                <div class="round" id="ts-r">TS</div>
-                <div class="round" id="dev-r">DEV</div>
-                <div class="round" id="qa-r">QA</div>
-                <img id="c-s" class="arrow" data-jmpress="fade after 1000ms step" src="images/arrow.svg" />
-                <img id="s-d" class="arrow" data-jmpress="fade after 500ms #c-s" src="images/arrow.svg" />
-                <img id="d-q" class="arrow" data-jmpress="fade after 500ms #s-d" src="images/arrow.svg" />
-                <img id="q-s" class="arrow" data-jmpress="fade after 500ms #d-q" src="images/arrow.svg" />
+                <div class="frame">
+                		<div id="how" class="l-text"><h1>How it works</h1></div>
+                    <div class="round l-text" id="c-r">Client</div>
+                    <div class="round l-text" id="ts-r">TS</div>
+                    <div class="round l-text" id="dev-r">DEV</div>
+                    <div class="round l-text" id="qa-r">QA</div>
+                    <img id="c-s" class="arrow" data-jmpress="fade after 1000ms step" src="images/arrow.svg" />
+                    <img id="s-d" class="arrow" data-jmpress="fade after 500ms #c-s" src="images/arrow.svg" />
+                    <img id="d-q" class="arrow" data-jmpress="fade after 500ms #s-d" src="images/arrow.svg" />
+                    <img id="q-s" class="arrow" data-jmpress="fade after 500ms #d-q" src="images/arrow.svg" />
+                </div>
             </section>
-            <section data-x="0" data-y="200" data-z="200" data-rotate-y="90">
-                <div class="container">
+            <section data-x="-100" data-y="600" data-z="50" data-rotate-y="90">
+                <div class="nowrap">
                   <div class="block left-align">
                       <p data-jmpress="drive-right after 500ms step">collect & validate information</p>
                       <p data-jmpress="drive-right after 100ms prev">report problems</p>
@@ -61,24 +63,24 @@
                   </div>
                 <div>
             </section>
-            <section data-x="0" data-y="-700" data-z="-500" data-rotate-y="90">
-                <div class="container">
+            <section data-x="-100" data-y="-750" data-z="0" data-rotate-y="90">
+                <div id="dev-desc" class="nowrap">
                     <div class="left-align">
                         <p data-jmpress="drive-right after 500ms step">deeper analysis</p>
                         <p data-jmpress="drive-right after 100ms prev">actual fixing</p>
                     </div>
                 </div>
             </section>
-            <section data-x="0" data-y="200" data-z="-800" data-rotate-y="90">
-                <div class="container">
+            <section data-x="-100" data-y="800" data-z="-800" data-rotate-y="90">
+                <div class="nowrap">
                     <div class="left-align">
                       <p data-jmpress="drive-right after 500ms step">confirm <strong>fix</strong></p>
                       <p data-jmpress="fade after 2s prev">...and that nothing else has been broken along way</strong></p>
                     <div>
                 </div>
             </section>
-            <section data-x="1000" data-y="0" data-z="0" data-rotate-x="90">
-                <div class="container correct-left" data-jmpress="fade after 1000ms step">
+            <section data-x="3000" data-y="0" data-z="0" data-rotate-x="90">
+                <div class="nowrap correct-left" data-jmpress="fade after 1000ms step">
                     <div id="news" class="left-align">
                         <div>The</div>
                         <div>news</div>
@@ -111,8 +113,8 @@
                     </div>
                 </div>
             </section>
-            <section data-x="1000" data-y="1000" data-z="0" data-rotate-x="90">
-                <div class="container">
+            <section data-x="3000" data-y="1000" data-z="0" data-rotate-x="90">
+                <div class="nowrap">
                     <img class="chart" data-jmpress="fade after 500ms step" src="images/chart.svg">
                     <ul id="team">
                         <li class="l-text" data-jmpress="fade after 500ms prev"><h1>Team</h1></li>
@@ -124,23 +126,23 @@
                 </div>
                 <div id="increase" data-jmpress="fade" class="l-text">&#8593;load</div>
             </section>
-            <section data-x="1000" data-y="2000" data-z="0" data-rotate-x="90">
-                <div class="container" data-jmpress="fade after 500ms step">
+            <section data-x="3000" data-y="2000" data-z="0" data-rotate-x="90">
+                <div class="container nowrap" data-jmpress="fade after 500ms step">
                     <h1 class="l-text">Describe tools and methods</h1>
                     <img id="toolbox" src="images/toolbox.svg">
                 </div>
             </section>
-            <section data-x="1000" data-y="4000" data-z="-400" data-rotate-x="90">
+            <section data-x="3000" data-y="4000" data-z="-400" data-rotate-x="90">
                 <img id="world" data-jmpress="fade after 500ms step" src="images/world.svg" />
-                <img id="moscow" data-jmpress="drive-down after 1s prev" src="images/marker.svg" />
-                <div id="timezone-m" data-jmpress="drive-up after 2s prev"></div>
-                <img id="buenos-aires" data-jmpress="drive-down after 1s prev" src="images/marker.svg" />
-                <div id="timezone-b" data-jmpress="drive-up after 2s prev"></div>
+                <div id="timezone-m" data-jmpress="drive-up after 2s #moscow"></div>
+                <div id="timezone-b" data-jmpress="drive-up after 2s #buenos-aires"></div>
+                <img id="moscow" data-jmpress="drive-down after 1s #world" src="images/marker.svg" />
+                <img id="buenos-aires" data-jmpress="drive-down after 1s #timezome-m" src="images/marker.svg" />
                 <ul id="centers-list">
-                    <li class="l-text" data-jmpress="drive-right after 500ms prev"><h1>more Support centers</h1></li>
+                    <li class="l-text" data-jmpress="drive-right after 500ms prev"><h1>Support centers</h1></li>
                     <li class="l-text" data-jmpress="drive-right after 800ms prev">local timezones</li>
                     <li class="l-text" data-jmpress="drive-right after 100ms prev">phone support</li>
-                    <li class="l-text" data-jmpress="drive-right after 100ms prev">relevant languages</li>
+                    <li class="l-text" data-jmpress="drive-right after 100ms prev">more languages</li>
                 </ul>
             </section>
         </div>
