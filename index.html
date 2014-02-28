@@ -114,6 +114,12 @@
                 </div>
             </section>
             <section data-x="3000" data-y="1000" data-z="0" data-rotate-x="90">
+                <div class="container nowrap" data-jmpress="fade after 500ms step">
+                    <h1 class="l-text">Describe tools and methods</h1>
+                    <img id="toolbox" src="images/toolbox.svg">
+                </div>
+            </section>
+            <section data-x="3000" data-y="2000" data-z="0" data-rotate-x="90">
                 <div class="nowrap">
                     <img class="chart" data-jmpress="fade after 500ms step" src="images/chart.svg">
                     <ul id="team">
@@ -125,12 +131,6 @@
                     </ul>
                 </div>
                 <div id="increase" data-jmpress="fade" class="l-text">&#8593;load</div>
-            </section>
-            <section data-x="3000" data-y="2000" data-z="0" data-rotate-x="90">
-                <div class="container nowrap" data-jmpress="fade after 500ms step">
-                    <h1 class="l-text">Describe tools and methods</h1>
-                    <img id="toolbox" src="images/toolbox.svg">
-                </div>
             </section>
             <section data-x="3000" data-y="4000" data-z="-400" data-rotate-x="90">
                 <img id="world" data-jmpress="fade after 500ms step" src="images/world.svg" />
@@ -154,8 +154,13 @@
                     stepSelector: 'section',
                     mouse: { clickSelects: false }
                 });
-            $('body').click(function (e) {
-                $jmpress.jmpress('next');
+            $(document).on('mousewheel', function (e) {
+                e.preventDefault();
+                if (e.originalEvent.deltaY > 0) {
+                    $jmpress.jmpress('next');
+                } else {
+                    $jmpress.jmpress('prev');
+                }
             })
             $('section:first-child').on('enterStep', function (event) {
                 $('#logo').animate ({
