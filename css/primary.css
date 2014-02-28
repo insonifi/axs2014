@@ -89,7 +89,7 @@ p {
   top: 100px;
 }
 #world {
-  height: 100vh;
+  height: 74vh;
 }
 #how {
   position: fixed;
@@ -104,14 +104,14 @@ p {
   width: 100%;
 }
 #buenos-aires {
-  left: 31%;
-  top: 74.3%;
+  left: 28.1%;
+  top: 78.6%;
   position: fixed;
   width: 3%;
 }
 #moscow {
   left: 57.5%;
-  top: 26.6%;
+  top: 22.6%;
   position: fixed;
   width: 3%;
 }
@@ -132,8 +132,8 @@ p {
   z-index: 100;
 }
 #centers-list {
-  top: -3%;
-  left: -4%;
+  top: -14%;
+  left: 0;
   position: fixed;
 }
 #deliver {
@@ -175,7 +175,7 @@ p {
 #increase {
   position: fixed;
   top: 0;
-  right: -10%;
+  right: 10%;
 }
 #jmpress {
   backface-visibility: hidden;
@@ -183,8 +183,8 @@ p {
 }
 #team {
   position: fixed;
-  top: -15%;
-  left: -12%;
+  top: -10%;
+  left: 0%;
 }
 #funnel-1 {
   position: fixed;
@@ -200,8 +200,7 @@ p {
   padding: 15%
 }
 .chart {
-  opacity: 0.5;
-  height: 75vh;
+  height: 63vh;
   width: auto;;
 }
 .gap-left {
@@ -227,7 +226,7 @@ p {
 #timezone-b {
   top: 0;
   position: fixed;
-  left: 19%;
+  left: 16%;
   height: 100%;
   width: 27%;
 /*  background: rgba(49, 146, 223, 0.05);*/
